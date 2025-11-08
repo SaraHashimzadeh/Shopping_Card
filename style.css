@@ -19,3 +19,48 @@ img {
     width: 100%;
     margin: auto;
 }
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    z-index: 200;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: linear-gradient(to right, #e2aef4, #705eb4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #000;
+}
+
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.card-icon i {
+    font-size: 24px;
+}
+
+.cart-icon span {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: #705eb4;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 4px;
+    border-radius: 50%;
+}
