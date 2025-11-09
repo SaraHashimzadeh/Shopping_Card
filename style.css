@@ -64,3 +64,66 @@ header {
     padding: 2px 4px;
     border-radius: 50%;
 }
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,auto));
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+.product-card {
+    background: #fff;
+    border-radius: 1.5rem;
+    padding: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+}
+
+.product-image {
+    width: 100%;
+    max-height: 250px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+    margin-bottom: 10px;
+}
+
+.product-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    padding: 0 14px;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 14px;
+    margin: 8px 0;
+}
+
+.product-price {
+    color: #705eb4;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.product-info p {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: #444;
+}
+
+.add-to-cart i {
+    background: #705eb4;
+    background: linear-gradient(to bottom right, #e2aef4, #705eb4);
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
