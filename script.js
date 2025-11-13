@@ -1,5 +1,7 @@
 //Cart
-let cartItems = JSON.parse(localStorage.getItem('cartItem')) || [];
+let cartItems = JSON.parse(localStorage.getItem('cartItems')) || []; 
+let total = 0;
+let itemCount = 0;
 
 //Add to cart
 function addToCart(productCard){
@@ -24,6 +26,16 @@ if(existingItem) {
 updateLocalStorage();
 
 }
+//Show cart item in cart
+function updateCartDispla() {
+    const cartList = document.getElementById('cart-items')
+    const totalElement = document.getElementById('total-price')
+    const countElement = document.getElementById('cart-count');
+
+    cartList.innerHTML = '';
+    total = cartItems.reduce((sum, item) => sum +item)
+}
+
 
 //Store Cart In Local Storage to main on page refresh
 function updateLocalStorage() {
